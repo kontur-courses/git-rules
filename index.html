@@ -1,0 +1,91 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <script>
+        window.ZeroMd = {
+            config: {
+                cssUrls: [
+                '/styles/marked.css',
+                '/styles/prism.css'
+                ]
+            }
+        };
+    </script>
+    <style>
+
+        h1 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: center;
+			margin-top: 0px;
+			margin-bottom: 10px;
+        }
+		
+		.header {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.25;
+			height: 40px;
+            text-align: center;
+			margin-top: 0px;
+			margin-bottom: 10px;
+        }
+		
+		.header a {
+			display: inline-block;
+			padding-top: 15px;
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+        .page {
+            display: flex;
+            justify-content: space-between;
+            page-break-after: always;
+			margin: 30px;
+        }
+
+        .page .leftColumn {
+            margin: 0px 30px 0px 0px;
+            width: 100%;
+        }
+		
+		.page .rightColumn {
+            margin: 0px 0px 0px 30px;
+            width: 100%;
+        }
+
+        .page .block {
+            margin: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="leftColumn">
+            <div class="header"><a href="https://github.com/kontur-courses/git">https://github.com/kontur-courses/git</a></div>
+            <div class="block"><zero-md src="./help.md"/></div>
+        </div>
+        <div class="rightColumn">
+			<h1>Принципы Git</h1>
+            <div class="block"><zero-md src="./init.md"/></div>
+            <div class="block"><zero-md src="./commit.md"/></div>
+            <div class="block"><zero-md src="./branch.md"/></div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="leftColumn">
+            <div class="block"><zero-md src="./merge.md"/></div>
+            <div class="block"><zero-md src="./rebase.md"/></div>
+            <div class="block"><zero-md src="./reset.md"/></div>
+        </div>
+        <div class="rightColumn">
+            <div class="block"><zero-md src="./fetch.md"/></div>
+            <div class="block"><zero-md src="./push.md"/></div>
+            <div class="block"><zero-md src="./upstream.md"/></div>
+        </div>
+    </div>
+</body>
+</html>
