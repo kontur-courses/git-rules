@@ -1,0 +1,5 @@
+# Коллекция полезных .gitignore от GitHub: https://github.com/github/gitignore
+
+
+# Исключение из игнорирования конкретного файла:
+!init.md
