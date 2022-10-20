@@ -12,4 +12,6 @@
 - `git checkout <branch>`или `git switch <branch>` — переместить HEAD на ветку
 - `git checkout -b <new_branch>` или `git switch -c <new_branch>` — создать ветку и перейти на нее
 - `git reset --hard <commit>` — переместить HEAD и текущую ветку на `<commit>`
-### Lorem ipsum dolor sit amet, consectetur adipiscing elit
+- `git reflog show <ref>` — показать лог действий со ссылкой
+- `git reflog` = `git reflog show HEAD` — показать лог действий с HEAD
+- `git gc` — удалить ненужные файлы и оптимизировать локальный репозиторий
